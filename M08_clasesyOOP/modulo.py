@@ -1,8 +1,6 @@
-print('Hoal')
-
 class Numero:
-    def __init__(self,lista):
-        self.lista = lista
+    def __init__(self,lista_numeros):
+        self.lista = lista_numeros
 
     def factorial_lista(self):
         for i in self.lista:
@@ -10,14 +8,14 @@ class Numero:
     
     def primo_lista(self):
         for i in self.lista:
-            if self.primo == True:
-                print('El elemento ',self.lista[i],' es primo')
-            if self.primo == False:
-                print('El elemento ',self.lista[i],' no es primo')
+            if (self.primo(i)) == True:
+                print('El elemento ',i,' es primo')
+            else:
+                print('El elemento ',i,' no es primo')
 
     def convertir_temperatura_lista(self,medida_origen,medida_destino):
         for i in self.lista:
-            print(i, 'grados ',medida_origen,' son ',self.convertir_temperatura(self.lista[i],medida_origen,medida_destino),' grados ', medida_destino)
+            print(i, 'grados ',medida_origen,' son ',self.convertir_temperatura(i,medida_origen,medida_destino),' grados ', medida_destino)
 
 
     def factorial(self,valor):
