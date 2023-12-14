@@ -1,3 +1,5 @@
+print('Hoal')
+
 class Numero:
     def __init__(self,lista):
         self.lista = lista
@@ -71,3 +73,4 @@ class Numero:
             if medida_destino == 'kelvin':
                 temperatura = ((valor -32)/1.8)+273.15
         return temperatura
+    
